@@ -52,7 +52,7 @@ $ pod install
 ### Full-screen feedback
 Take feedback using our pre-build `QWSurveyViewController` and get the response after submission by implementing the `QWSurveyDelegate` protocol.
 
-<img width="340" alt="SurveySparrow Android SDK full-screen view" src="https://user-images.githubusercontent.com/61273614/85126008-37b2a500-b24a-11ea-8b7d-1edd55ecc668.png">
+<img width="340" alt="QWSurveySDK full-screen view" src="https://gitlab.com/Shehryar3/qwarysurvey/-/blob/main/QWarySurvey/Media/full_screen.png">
 
 #### Import framework
 ```swift
@@ -72,7 +72,7 @@ present(qwSurveyViewController, animated: true, completion: nil)
 ### Embed survey 
 Embed the feedback experience using the [`QWSurveyView`](#QWSurveyView).
 
-<img width="340" alt="SurveySparrow Android SDK embed view" src="https://user-images.githubusercontent.com/61273614/85125981-2e293d00-b24a-11ea-8468-d56f1035dccb.png">
+<img width="340" alt="QWSurveySDK embed view" src="https://gitlab.com/Shehryar3/qwarysurvey/-/blob/main/QWarySurvey/Media/embedded.png">
 
 #### Add QWSurveyView
 Add a `UIView` to storyboard and change the Class to `QWSurveyView` under *Identity Inspector* and also make sure that the Module is `QWarySurveySDK`.
@@ -91,9 +91,6 @@ Implement `QWSurveyDelegate` protocol to handle responses.
 
 ### Schedule Surveys
 Ask the user to take a feedback survey when they open your app or a screen after specified time.
-
-<img width="340" alt="SurveySparrow Android SDK scheduling" src="https://user-images.githubusercontent.com/61273614/85126016-3d0fef80-b24a-11ea-8760-89bf3cca8af4.png">
-
 
 Override viewDidAppear method and create a `QWSurvey` object `QWSurveyRequest` and `QWSurveyDelegate`. Then call `scheduleSurvey` method on the `QWSurvey` object by passing the parent `ViewController` reference to schedule the survey.
 ```swift
