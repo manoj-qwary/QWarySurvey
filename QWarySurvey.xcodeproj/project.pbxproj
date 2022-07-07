@@ -10,7 +10,7 @@
 		2D0D7FDB2877558D003AA561 /* embedded.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0D7FD92877558D003AA561 /* embedded.png */; };
 		2D0D7FDC2877558D003AA561 /* full_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0D7FDA2877558D003AA561 /* full_screen.png */; };
 		2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2981E92875DCCE0013AB03 /* QWSurvey.swift */; };
-		2D2981EC2875F4660013AB03 /* QWarySurvey.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */; };
+		2D2981EC2875F4660013AB03 /* QWarySurveySDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */; };
 		2D2981EF2875F60E0013AB03 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981ED2875F60E0013AB03 /* LICENSE */; };
 		2D2981F02875F60E0013AB03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EE2875F60E0013AB03 /* README.md */; };
 		2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD32286E88180066E677 /* AppDelegate.swift */; };
@@ -29,7 +29,7 @@
 		2D0D7FD92877558D003AA561 /* embedded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = embedded.png; sourceTree = "<group>"; };
 		2D0D7FDA2877558D003AA561 /* full_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_screen.png; sourceTree = "<group>"; };
 		2D2981E92875DCCE0013AB03 /* QWSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWSurvey.swift; sourceTree = "<group>"; };
-		2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QWarySurvey.podspec; sourceTree = "<group>"; };
+		2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QWarySurveySDK.podspec; sourceTree = "<group>"; };
 		2D2981ED2875F60E0013AB03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2D2981EE2875F60E0013AB03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DDCCD2F286E88180066E677 /* QWarySurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWarySurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +69,7 @@
 		2DDCCD26286E88180066E677 = {
 			isa = PBXGroup;
 			children = (
-				2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */,
+				2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */,
 				2D2981ED2875F60E0013AB03 /* LICENSE */,
 				2D2981EE2875F60E0013AB03 /* README.md */,
 				2DDCCD31286E88180066E677 /* QWarySurvey */,
@@ -174,7 +174,7 @@
 				2D2981F02875F60E0013AB03 /* README.md in Resources */,
 				2DDCCD3F286E881C0066E677 /* LaunchScreen.storyboard in Resources */,
 				2D0D7FDB2877558D003AA561 /* embedded.png in Resources */,
-				2D2981EC2875F4660013AB03 /* QWarySurvey.podspec in Resources */,
+				2D2981EC2875F4660013AB03 /* QWarySurveySDK.podspec in Resources */,
 				2D0D7FDC2877558D003AA561 /* full_screen.png in Resources */,
 				2DDCCD3C286E881C0066E677 /* Assets.xcassets in Resources */,
 				2DDCCD3A286E88180066E677 /* Main.storyboard in Resources */,
