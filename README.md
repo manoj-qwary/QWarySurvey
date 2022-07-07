@@ -2,8 +2,6 @@
 [![Support Dependecy Manager](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
 [![Version](https://img.shields.io/cocoapods/v/QWarySurveySDK.svg?style=flat)](http://cocoapods.org/pods/QWarySurveySDK)
 [![Platform](https://img.shields.io/cocoapods/p/QWarySurveySDK.svg?style=flat)](http://cocoapods.org/pods/QWarySurveySDK)
-[![CocoaPods](https://img.shields.io/cocoapods/dt/QWarySurveySDK.svg)](http://cocoapods.org/pods/QWarySurveySDK)
-[![CocoaPods](https://img.shields.io/cocoapods/at/QWarySurveySDK.svg)](http://cocoapods.org/pods/QWarySurveySDK)
 
 
 
