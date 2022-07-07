@@ -26,7 +26,7 @@ public struct QWSurveyRequest {
     }
 
     // MARK: Initialize
-    init(scheme: String?, host: String!, path: String?, params: [String:String]?) {
+    public init(scheme: String?, host: String!, path: String?, params: [String:String]?) {
         self.scheme = (scheme == nil) ? "https" : scheme
         self.host = host
         self.path = (path == nil) ? "" : path
