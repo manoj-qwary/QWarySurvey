@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2981E92875DCCE0013AB03 /* QWSurvey.swift */; };
+		2D2981EC2875F4660013AB03 /* QWarySurvey.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */; };
+		2D2981EF2875F60E0013AB03 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981ED2875F60E0013AB03 /* LICENSE */; };
+		2D2981F02875F60E0013AB03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EE2875F60E0013AB03 /* README.md */; };
 		2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD32286E88180066E677 /* AppDelegate.swift */; };
 		2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD34286E88180066E677 /* SceneDelegate.swift */; };
 		2DDCCD37286E88180066E677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD36286E88180066E677 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D2981E92875DCCE0013AB03 /* QWSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWSurvey.swift; sourceTree = "<group>"; };
+		2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QWarySurvey.podspec; sourceTree = "<group>"; };
+		2D2981ED2875F60E0013AB03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2D2981EE2875F60E0013AB03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DDCCD2F286E88180066E677 /* QWarySurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWarySurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDCCD32286E88180066E677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDCCD34286E88180066E677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +56,9 @@
 		2DDCCD26286E88180066E677 = {
 			isa = PBXGroup;
 			children = (
+				2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */,
+				2D2981ED2875F60E0013AB03 /* LICENSE */,
+				2D2981EE2875F60E0013AB03 /* README.md */,
 				2DDCCD31286E88180066E677 /* QWarySurvey */,
 				2DDCCD30286E88180066E677 /* Products */,
 			);
@@ -64,7 +75,7 @@
 		2DDCCD31286E88180066E677 /* QWarySurvey */ = {
 			isa = PBXGroup;
 			children = (
-				2DDCCD46286E88950066E677 /* QWarySurveySDK */,
+				2DDCCD46286E88950066E677 /* SDK */,
 				2DDCCD32286E88180066E677 /* AppDelegate.swift */,
 				2DDCCD34286E88180066E677 /* SceneDelegate.swift */,
 				2DDCCD36286E88180066E677 /* ViewController.swift */,
@@ -76,15 +87,16 @@
 			path = QWarySurvey;
 			sourceTree = "<group>";
 		};
-		2DDCCD46286E88950066E677 /* QWarySurveySDK */ = {
+		2DDCCD46286E88950066E677 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
 				2DDCCD4F286E8AF90066E677 /* QWSurveyDelegate.swift */,
 				2DDCCD51286E8B440066E677 /* QWSurveyView.swift */,
 				2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */,
 				2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */,
+				2D2981E92875DCCE0013AB03 /* QWSurvey.swift */,
 			);
-			path = QWarySurveySDK;
+			path = SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2981F02875F60E0013AB03 /* README.md in Resources */,
 				2DDCCD3F286E881C0066E677 /* LaunchScreen.storyboard in Resources */,
+				2D2981EC2875F4660013AB03 /* QWarySurvey.podspec in Resources */,
 				2DDCCD3C286E881C0066E677 /* Assets.xcassets in Resources */,
 				2DDCCD3A286E88180066E677 /* Main.storyboard in Resources */,
+				2D2981EF2875F60E0013AB03 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +180,7 @@
 				2DDCCD56286E8C0C0066E677 /* QWSurveyViewController.swift in Sources */,
 				2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */,
 				2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */,
+				2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +334,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

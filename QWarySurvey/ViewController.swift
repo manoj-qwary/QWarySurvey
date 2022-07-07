@@ -8,9 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController, QWSurveyDelegate {
+
     // MARK: Connection
-    @IBOutlet weak var ssSurveyView: QWSurveyView!
-    
+    @IBOutlet weak var qwSurveyView: QWSurveyView!
+
+    // MARK: Properties
+    var request: QWSurveyRequest {
+        var params = [String:String]()
+        params["email"] = "jondoe2@acmeinc.com"
+        params["planId"] = "trial2"
+        let request = QWSurveyRequest(scheme: nil, host: "survey.qwary.com", path: "/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIZ99rQiotQa8=", params: params)
+        return request
+    }
+
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,38 +29,26 @@ class ViewController: UIViewController, QWSurveyDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-//        let surveySparrow = QWSurvey(domain: "<account-domain>", token: "<sdk-token>")
-//        surveySparrow.scheduleSurvey(parent: self)
+        let surveySparrow = QWSurvey(request: request, delegate: self)
+        surveySparrow.scheduleSurvey(parent: self)
     }
     
     // MARK: Actions
-    
-    var request: QWSurveyRequest {
-        var params = [String:String]()
-        params["email"] = "jondoe2@acmeinc.com"
-        params["planId"] = "trial2"
-        let request = QWSurveyRequest(scheme: nil, host: "survey.qwary.com", path: "/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIqL_BUyxSxNs=", params: params)
-//        let request = QWSurveyRequest(scheme: nil, host: "survey.qwary.com", path: "/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIIuNbg4BYlK8=", params: params)
-        return request
-    }
-    
     @IBAction func startFullscreenSurvey(_ sender: UIButton) {
-        let qwSurveyViewController = QWSurveyViewController(request: self.request)
-        qwSurveyViewController.surveyDelegate = self
+        let qwSurveyViewController = QWSurveyViewController(request: request, delegate: self)
         present(qwSurveyViewController, animated: true, completion: nil)
     }
     
     @IBAction func showEmbeddedSurvey(_ sender: UIButton) {
-        ssSurveyView.loadSurvey(request: self.request)
+        qwSurveyView.loadSurvey(request: request, delegate: self)
     }
     
-    func handleSurveyResponse(response: [String : AnyObject]) {
-        print(response)
+    // MARK: Delegate
+    func didReceiveSurveyOutcome(_ state: QWSurveyState) {
+        print("Received outcome from survey: \(state)")
     }
-    
-    func handleSurveyLoaded(response: [String : AnyObject]){
-        print(response)
+    func didRedirectToURL(_ url: String) {
+        print("Redirected to url: \(url)")
     }
 }
 

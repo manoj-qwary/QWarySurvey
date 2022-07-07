@@ -51,7 +51,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ssSurveyView" destination="zan-Z1-Kbi" id="tlS-we-4cV"/>
+                        <outlet property="qwSurveyView" destination="zan-Z1-Kbi" id="H6W-p3-7Y7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcQ-HY-pSi" sceneMemberID="firstResponder"/>
