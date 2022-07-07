@@ -59,7 +59,7 @@ Take feedback using our pre-build `QWSurveyViewController` and get the response 
 import QWarySurveySDK
 ```
 #### Create a [`QWSurveyViewController`](#QWSurveyViewController)
-Create a `QWSurveyViewController` with  `QWSurveyRequest` and `QWSurveyDelegate`
+Create a `QWSurveyViewController` with `QWSurveyRequest` and `QWSurveyDelegate`
 ```swift
 var urlQueryParams = [String:String]()
 urlQueryParams["email"] = "jondoe2@acmeinc.com"
@@ -95,7 +95,7 @@ Ask the user to take a feedback survey when they open your app or a screen after
 <img width="340" alt="SurveySparrow Android SDK scheduling" src="https://user-images.githubusercontent.com/61273614/85126016-3d0fef80-b24a-11ea-8760-89bf3cca8af4.png">
 
 
-Override viewDidAppear method and create a `QWSurvey` object by passing domain and `token`. Then call `scheduleSurvey` method on the `QWSurvey` object by passing the parent `ViewController` reference to schedule the survey.
+Override viewDidAppear method and create a `QWSurvey` object `QWSurveyRequest` and `QWSurveyDelegate`. Then call `scheduleSurvey` method on the `QWSurvey` object by passing the parent `ViewController` reference to schedule the survey.
 ```swift
 override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -106,6 +106,8 @@ override func viewDidAppear(_ animated: Bool) {
 
 #### Handle response
 Implement `QWSurveyDelegate` protocol to handle responses.
+
+
 ## License
 
 QWarySurveySDK is licensed under the Apache License 2.0.
