@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2981E92875DCCE0013AB03 /* QWSurvey.swift */; };
+		2D2981EC2875F4660013AB03 /* QWarySurvey.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */; };
+		2D2981EF2875F60E0013AB03 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981ED2875F60E0013AB03 /* LICENSE */; };
+		2D2981F02875F60E0013AB03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EE2875F60E0013AB03 /* README.md */; };
+		2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD32286E88180066E677 /* AppDelegate.swift */; };
+		2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD34286E88180066E677 /* SceneDelegate.swift */; };
+		2DDCCD37286E88180066E677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD36286E88180066E677 /* ViewController.swift */; };
+		2DDCCD3A286E88180066E677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDCCD38286E88180066E677 /* Main.storyboard */; };
+		2DDCCD3C286E881C0066E677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDCCD3B286E881C0066E677 /* Assets.xcassets */; };
+		2DDCCD3F286E881C0066E677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDCCD3D286E881C0066E677 /* LaunchScreen.storyboard */; };
+		2DDCCD50286E8AF90066E677 /* QWSurveyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD4F286E8AF90066E677 /* QWSurveyDelegate.swift */; };
+		2DDCCD52286E8B440066E677 /* QWSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD51286E8B440066E677 /* QWSurveyView.swift */; };
+		2DDCCD56286E8C0C0066E677 /* QWSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */; };
+		2DDCCD58286E8D660066E677 /* QWSurveyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D2981E92875DCCE0013AB03 /* QWSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWSurvey.swift; sourceTree = "<group>"; };
+		2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QWarySurvey.podspec; sourceTree = "<group>"; };
+		2D2981ED2875F60E0013AB03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2D2981EE2875F60E0013AB03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DDCCD2F286E88180066E677 /* QWarySurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWarySurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDCCD32286E88180066E677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DDCCD34286E88180066E677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2DDCCD36286E88180066E677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DDCCD39286E88180066E677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DDCCD3B286E881C0066E677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DDCCD3E286E881C0066E677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DDCCD40286E881C0066E677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDCCD4F286E8AF90066E677 /* QWSurveyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyDelegate.swift; sourceTree = "<group>"; };
+		2DDCCD51286E8B440066E677 /* QWSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyView.swift; sourceTree = "<group>"; };
+		2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyViewController.swift; sourceTree = "<group>"; };
+		2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DDCCD2C286E88180066E677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DDCCD26286E88180066E677 = {
+			isa = PBXGroup;
+			children = (
+				2D2981EB2875F4660013AB03 /* QWarySurvey.podspec */,
+				2D2981ED2875F60E0013AB03 /* LICENSE */,
+				2D2981EE2875F60E0013AB03 /* README.md */,
+				2DDCCD31286E88180066E677 /* QWarySurvey */,
+				2DDCCD30286E88180066E677 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DDCCD30286E88180066E677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCCD2F286E88180066E677 /* QWarySurvey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DDCCD31286E88180066E677 /* QWarySurvey */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCCD46286E88950066E677 /* SDK */,
+				2DDCCD32286E88180066E677 /* AppDelegate.swift */,
+				2DDCCD34286E88180066E677 /* SceneDelegate.swift */,
+				2DDCCD36286E88180066E677 /* ViewController.swift */,
+				2DDCCD38286E88180066E677 /* Main.storyboard */,
+				2DDCCD3B286E881C0066E677 /* Assets.xcassets */,
+				2DDCCD3D286E881C0066E677 /* LaunchScreen.storyboard */,
+				2DDCCD40286E881C0066E677 /* Info.plist */,
+			);
+			path = QWarySurvey;
+			sourceTree = "<group>";
+		};
+		2DDCCD46286E88950066E677 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCCD4F286E8AF90066E677 /* QWSurveyDelegate.swift */,
+				2DDCCD51286E8B440066E677 /* QWSurveyView.swift */,
+				2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */,
+				2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */,
+				2D2981E92875DCCE0013AB03 /* QWSurvey.swift */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DDCCD2E286E88180066E677 /* QWarySurvey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDCCD43286E881C0066E677 /* Build configuration list for PBXNativeTarget "QWarySurvey" */;
+			buildPhases = (
+				2DDCCD2B286E88180066E677 /* Sources */,
+				2DDCCD2C286E88180066E677 /* Frameworks */,
+				2DDCCD2D286E88180066E677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QWarySurvey;
+			productName = QWarySurvey;
+			productReference = 2DDCCD2F286E88180066E677 /* QWarySurvey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DDCCD27286E88180066E677 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2DDCCD2E286E88180066E677 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2DDCCD2A286E88180066E677 /* Build configuration list for PBXProject "QWarySurvey" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DDCCD26286E88180066E677;
+			productRefGroup = 2DDCCD30286E88180066E677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DDCCD2E286E88180066E677 /* QWarySurvey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DDCCD2D286E88180066E677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2981F02875F60E0013AB03 /* README.md in Resources */,
+				2DDCCD3F286E881C0066E677 /* LaunchScreen.storyboard in Resources */,
+				2D2981EC2875F4660013AB03 /* QWarySurvey.podspec in Resources */,
+				2DDCCD3C286E881C0066E677 /* Assets.xcassets in Resources */,
+				2DDCCD3A286E88180066E677 /* Main.storyboard in Resources */,
+				2D2981EF2875F60E0013AB03 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DDCCD2B286E88180066E677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDCCD58286E8D660066E677 /* QWSurveyRequest.swift in Sources */,
+				2DDCCD50286E8AF90066E677 /* QWSurveyDelegate.swift in Sources */,
+				2DDCCD52286E8B440066E677 /* QWSurveyView.swift in Sources */,
+				2DDCCD37286E88180066E677 /* ViewController.swift in Sources */,
+				2DDCCD56286E8C0C0066E677 /* QWSurveyViewController.swift in Sources */,
+				2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */,
+				2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */,
+				2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DDCCD38286E88180066E677 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDCCD39286E88180066E677 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DDCCD3D286E881C0066E677 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDCCD3E286E881C0066E677 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DDCCD41286E881C0066E677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DDCCD42286E881C0066E677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DDCCD44286E881C0066E677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWarySurvey/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwary.QWarySurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DDCCD45286E881C0066E677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QWarySurvey/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwary.QWarySurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DDCCD2A286E88180066E677 /* Build configuration list for PBXProject "QWarySurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDCCD41286E881C0066E677 /* Debug */,
+				2DDCCD42286E881C0066E677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDCCD43286E881C0066E677 /* Build configuration list for PBXNativeTarget "QWarySurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDCCD44286E881C0066E677 /* Debug */,
+				2DDCCD45286E881C0066E677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DDCCD27286E88180066E677 /* Project object */;
+}
