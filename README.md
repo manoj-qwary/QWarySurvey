@@ -1,7 +1,6 @@
 [![Swift version](https://img.shields.io/badge/swift-5.0-orange.svg?style=flat.svg)](https://img.shields.io/badge/swift-5.0-orange.svg?style=flat.svg)
 [![Support Dependecy Manager](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
 [![Version](https://img.shields.io/cocoapods/v/QWarySurveySDK.svg?style=flat)](http://cocoapods.org/pods/QWarySurveySDK)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/QWarySurveySDK.svg?style=flat)](http://cocoapods.org/pods/QWarySurveySDK)
 [![CocoaPods](https://img.shields.io/cocoapods/dt/QWarySurveySDK.svg)](http://cocoapods.org/pods/QWarySurveySDK)
 [![CocoaPods](https://img.shields.io/cocoapods/at/QWarySurveySDK.svg)](http://cocoapods.org/pods/QWarySurveySDK)
