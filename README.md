@@ -52,7 +52,7 @@ $ pod install
 ### Full-screen feedback
 Take feedback using our pre-build `QWSurveyViewController` and get the response after submission by implementing the `QWSurveyDelegate` protocol.
 
-<img width="340" alt="QWSurveySDK full-screen view" src="https://gitlab.com/Shehryar3/qwarysurvey/-/blob/main/QWarySurvey/Media/full_screen.png">
+<img width="340" alt="QWSurveySDK full-screen view" src="https://i.imgur.com/MznJCGy.png">
 
 #### Import framework
 ```swift
@@ -72,7 +72,7 @@ present(qwSurveyViewController, animated: true, completion: nil)
 ### Embed survey 
 Embed the feedback experience using the [`QWSurveyView`](#QWSurveyView).
 
-<img width="340" alt="QWSurveySDK embed view" src="https://gitlab.com/Shehryar3/qwarysurvey/-/blob/main/QWarySurvey/Media/embedded.png">
+<img width="340" alt="QWSurveySDK embed view" src="https://i.imgur.com/NK2laJU.png">
 
 #### Add QWSurveyView
 Add a `UIView` to storyboard and change the Class to `QWSurveyView` under *Identity Inspector* and also make sure that the Module is `QWarySurveySDK`.
