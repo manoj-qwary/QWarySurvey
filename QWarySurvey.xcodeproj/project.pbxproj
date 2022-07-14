@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D0D7FDB2877558D003AA561 /* embedded.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0D7FD92877558D003AA561 /* embedded.png */; };
 		2D0D7FDC2877558D003AA561 /* full_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0D7FDA2877558D003AA561 /* full_screen.png */; };
+		2D142E47287F013A008757A1 /* QWScheduleConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D142E46287F013A008757A1 /* QWScheduleConfigurations.swift */; };
 		2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2981E92875DCCE0013AB03 /* QWSurvey.swift */; };
 		2D2981EC2875F4660013AB03 /* QWarySurveySDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */; };
 		2D2981EF2875F60E0013AB03 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981ED2875F60E0013AB03 /* LICENSE */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		2D0D7FD92877558D003AA561 /* embedded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = embedded.png; sourceTree = "<group>"; };
 		2D0D7FDA2877558D003AA561 /* full_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_screen.png; sourceTree = "<group>"; };
+		2D142E46287F013A008757A1 /* QWScheduleConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWScheduleConfigurations.swift; sourceTree = "<group>"; };
 		2D2981E92875DCCE0013AB03 /* QWSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWSurvey.swift; sourceTree = "<group>"; };
 		2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QWarySurveySDK.podspec; sourceTree = "<group>"; };
 		2D2981ED2875F60E0013AB03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				2DDCCD51286E8B440066E677 /* QWSurveyView.swift */,
 				2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */,
 				2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */,
+				2D142E46287F013A008757A1 /* QWScheduleConfigurations.swift */,
 				2D2981E92875DCCE0013AB03 /* QWSurvey.swift */,
 			);
 			path = SDK;
@@ -193,6 +196,7 @@
 				2DDCCD50286E8AF90066E677 /* QWSurveyDelegate.swift in Sources */,
 				2DDCCD52286E8B440066E677 /* QWSurveyView.swift in Sources */,
 				2DDCCD37286E88180066E677 /* ViewController.swift in Sources */,
+				2D142E47287F013A008757A1 /* QWScheduleConfigurations.swift in Sources */,
 				2DDCCD56286E8C0C0066E677 /* QWSurveyViewController.swift in Sources */,
 				2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */,
 				2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */,

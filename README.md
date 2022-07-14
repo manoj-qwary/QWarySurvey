@@ -90,14 +90,21 @@ Implement `QWSurveyDelegate` protocol to handle responses.
 ### Schedule Surveys
 Ask the user to take a feedback survey when they open your app or a screen after specified time.
 
-Override viewDidAppear method and create a `QWSurvey` object `QWSurveyRequest` and `QWSurveyDelegate`. Then call `scheduleSurvey` method on the `QWSurvey` object by passing the parent `ViewController` reference to schedule the survey.
+Override viewDidAppear method and create a `QWSurvey` object with `QWSurveyRequest`, `QWSurveyDelegate` and `QWScheduleConfigurations`. Then call `scheduleSurvey` method on the `QWSurvey` object by passing the parent `ViewController` reference to schedule the survey.
 ```swift
 override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    let qwSurvey = QWSurvey(request: request, delegate: self)
+    let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.default)
     qwSurvey.scheduleSurvey(parent: self)
 }
 ```
+
+#### Schedule Configurations
+|Property|Description|Default Value|
+|-----------|------|
+|`startDate: String`|Survey is allowed to be shown to user at this date.|
+|`repeatSurvey: Bool`|After survey completion, if user should be asked for same survey again. If this property is set `true` then make sure you set a value of `repeatInterval` as well.|
+|`repeatInterval: TimeInterval`|Time interval for survey to be shown to user after last attempt. This property should always have a value when `repeatSurvey` is set `true`|
 
 #### Handle response
 Implement `QWSurveyDelegate` protocol to handle responses.

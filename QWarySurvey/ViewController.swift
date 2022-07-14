@@ -29,7 +29,7 @@ class ViewController: UIViewController, QWSurveyDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let qwSurvey = QWSurvey(request: request, delegate: self)
+        let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.default)
         qwSurvey.scheduleSurvey(parent: self)
     }
     
