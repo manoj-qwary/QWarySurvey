@@ -100,7 +100,7 @@ override func viewDidAppear(_ animated: Bool) {
 ```
 
 #### Schedule Configurations
-|Property|Description|Default Value|
+|Property|Description|
 |-----------|------|
 |`startDate: String`|Survey is allowed to be shown to user at this date.|
 |`repeatSurvey: Bool`|After survey completion, if user should be asked for same survey again. If this property is set `true` then make sure you set a value of `repeatInterval` as well.|
