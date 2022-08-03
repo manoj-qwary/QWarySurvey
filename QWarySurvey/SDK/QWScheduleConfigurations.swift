@@ -11,8 +11,8 @@ public struct QWScheduleConfigurations {
     
     // MARK: Properties
     public static var `default`: QWScheduleConfigurations {
-        let startDate = Date().addingTimeInterval(15)   //  mark survey start date as 15 mins from now
-        let repeatInterval = TimeInterval(60)     // repeat survey after 60 seconds
+        let startDate = Date().addingTimeInterval(15)   //  mark survey start date
+        let repeatInterval = TimeInterval(20)     // repeat survey after seconds
         return QWScheduleConfigurations(startDate: startDate, repeatSurvey: true, repeatInterval: repeatInterval)
     }
     var startDate: Date!

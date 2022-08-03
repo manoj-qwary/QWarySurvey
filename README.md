@@ -88,7 +88,7 @@ qwSurveyView.loadSurvey(request: request, delegate: self)
 Implement `QWSurveyDelegate` protocol to handle responses.
 
 ### Schedule Surveys
-Ask the user to take a feedback survey when they open your app or a screen after specified time.
+Ask the user to take a feedback survey when they open your app or a screen after specified time. Local notifications are also scheduled for next prompt date/time if the survey has `repeatSurvey:true` in `QWScheduleConfigurations`.
 
 Override viewDidAppear method and create a `QWSurvey` object with `QWSurveyRequest`, `QWSurveyDelegate` and `QWScheduleConfigurations`. Then call `scheduleSurvey` method on the `QWSurvey` object by passing the parent `ViewController` reference to schedule the survey.
 ```swift

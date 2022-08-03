@@ -11,7 +11,8 @@ class ViewController: UIViewController, QWSurveyDelegate {
 
     // MARK: Connection
     @IBOutlet weak var qwSurveyView: QWSurveyView!
-
+    private var observer: NSObjectProtocol?
+    
     // MARK: Properties
     var request: QWSurveyRequest {
         var params = [String:String]()
@@ -25,10 +26,19 @@ class ViewController: UIViewController, QWSurveyDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        observer = NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main) { [weak self] notification in
+            guard let self = self else { return }
+            // do whatever you want when the app is brought back to the foreground
+            self.configureScheduleSurvey()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        configureScheduleSurvey()
+    }
+    
+    private func configureScheduleSurvey() {
         let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.default)
         qwSurvey.scheduleSurvey(parent: self)
     }

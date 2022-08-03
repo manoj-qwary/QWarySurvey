@@ -43,7 +43,7 @@ public class QWSurvey: QWSurveyDelegate {
             print("Error: Survey schedule start date time can not be nil")
             return
         }
-        
+        print("startDateTime: \(startDateTime)")
         if startDateTime < Date() {
             if !configurations.repeatSurvey {
                 let isAlreadyTaken = UserDefaults.standard.bool(forKey: isAlreadyTakenKey)
@@ -55,11 +55,16 @@ public class QWSurvey: QWSurveyDelegate {
             let qwSurveyViewController = QWSurveyViewController(request: self.request, delegate: self)
             parent.present(qwSurveyViewController, animated: true, completion: nil)
 
-            let nextPromptDateTime = startDateTime.addingTimeInterval(configurations.repeatInterval)
+            let nextPromptDateTime = Date().addingTimeInterval(configurations.repeatInterval)
             UserDefaults.standard.set(nextPromptDateTime, forKey: startDateKey)
             UserDefaults.standard.synchronize()
             
             print("Next survey start date/time \(nextPromptDateTime)")
+            NotificationsManager.shared.scheduleNotification(request: request, configs: configurations, nextPromptDate: nextPromptDateTime)
+        }
+        else {
+            UserDefaults.standard.set(startDateTime, forKey: startDateKey)
+            UserDefaults.standard.synchronize()
         }
     }
 
