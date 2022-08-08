@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-public class QWSurveyViewController: UIViewController, QWSurveyDelegate {
+@objc public class QWSurveyViewController: UIViewController, QWSurveyDelegate {
     
     // MARK: Properties
     private var request: QWSurveyRequest!
     private var surveyDelegate: QWSurveyDelegate? = nil
 
-    public convenience init(request: QWSurveyRequest, delegate: QWSurveyDelegate?) {
+    @objc public convenience init(request: QWSurveyRequest, delegate: QWSurveyDelegate?) {
         self.init()
         self.request = request
         self.surveyDelegate = delegate

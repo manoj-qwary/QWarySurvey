@@ -94,7 +94,7 @@ Override viewDidAppear method and create a `QWSurvey` object with `QWSurveyReque
 ```swift
 override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.default)
+    let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.testConfigs)
     qwSurvey.scheduleSurvey(parent: self)
 }
 ```

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum QWSurveyState: Int {
+@objc public enum QWSurveyState: Int {
     case unknown = 0, completed, disqualified, terminated, redirect
     init(outcome: String) {
         switch outcome {
@@ -25,7 +25,7 @@ public enum QWSurveyState: Int {
     }
 }
 
-public protocol QWSurveyDelegate {
+@objc public protocol QWSurveyDelegate {
     func didReceiveSurveyOutcome(_ state: QWSurveyState)
     func didRedirectToURL(_ url: String)
 }

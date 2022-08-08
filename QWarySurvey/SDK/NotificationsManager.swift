@@ -9,17 +9,17 @@ import Foundation
 import UserNotifications
 import UIKit
 
-public protocol NotificationsScheduleType {
+@objc public protocol NotificationsScheduleType {
     func scheduleNotification(request: QWSurveyRequest, configs: QWScheduleConfigurations, nextPromptDate: Date)
 }
 
-public class NotificationsManager: NSObject,
+@objc public class NotificationsManager: NSObject,
                                    NotificationsScheduleType,
                                    UNUserNotificationCenterDelegate {
-    public static let shared = NotificationsManager()
-    private override init() {}
+    @objc public static let shared = NotificationsManager()
+    @objc private override init() {}
     
-    public func scheduleNotification(request: QWSurveyRequest, configs: QWScheduleConfigurations, nextPromptDate: Date) {
+    @objc public func scheduleNotification(request: QWSurveyRequest, configs: QWScheduleConfigurations, nextPromptDate: Date) {
         requestNotificationsPermission { [weak self] in
             guard let self = self else { return }
             let content = UNMutableNotificationContent()

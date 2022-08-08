@@ -18,7 +18,7 @@ class ViewController: UIViewController, QWSurveyDelegate {
         var params = [String:String]()
         params["email"] = "jondoe2@acmeinc.com"
         params["planId"] = "trial2"
-        let request = QWSurveyRequest(scheme: nil, host: "survey.qwary.com", path: "/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIZ99rQiotQa8=", params: params)
+        let request = QWSurveyRequest(scheme: "https", host: "survey.qwary.com", path: "/form/S_wSzSPnasH9Wc_FT15X0J1BuEcPl5gIZ99rQiotQa8=", params: params)
         return request
     }
 
@@ -39,7 +39,7 @@ class ViewController: UIViewController, QWSurveyDelegate {
     }
     
     private func configureScheduleSurvey() {
-        let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.default)
+        let qwSurvey = QWSurvey(request: request, delegate: self, configurations: QWScheduleConfigurations.testConfigs)
         qwSurvey.scheduleSurvey(parent: self)
     }
     

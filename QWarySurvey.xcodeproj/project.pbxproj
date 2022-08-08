@@ -14,6 +14,7 @@
 		2D2981EC2875F4660013AB03 /* QWarySurveySDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */; };
 		2D2981EF2875F60E0013AB03 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981ED2875F60E0013AB03 /* LICENSE */; };
 		2D2981F02875F60E0013AB03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2981EE2875F60E0013AB03 /* README.md */; };
+		2DC77BA828A1A72A00B835CC /* BridgingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC77BA728A1A72A00B835CC /* BridgingTest.m */; };
 		2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD32286E88180066E677 /* AppDelegate.swift */; };
 		2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD34286E88180066E677 /* SceneDelegate.swift */; };
 		2DDCCD37286E88180066E677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD36286E88180066E677 /* ViewController.swift */; };
@@ -35,6 +36,9 @@
 		2D2981EB2875F4660013AB03 /* QWarySurveySDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QWarySurveySDK.podspec; sourceTree = "<group>"; };
 		2D2981ED2875F60E0013AB03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2D2981EE2875F60E0013AB03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DC77BA528A1A72A00B835CC /* QWarySurvey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QWarySurvey-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DC77BA628A1A72A00B835CC /* BridgingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingTest.h; sourceTree = "<group>"; };
+		2DC77BA728A1A72A00B835CC /* BridgingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgingTest.m; sourceTree = "<group>"; };
 		2DDCCD2F286E88180066E677 /* QWarySurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QWarySurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDCCD32286E88180066E677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDCCD34286E88180066E677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,10 +101,13 @@
 				2DDCCD32286E88180066E677 /* AppDelegate.swift */,
 				2DDCCD34286E88180066E677 /* SceneDelegate.swift */,
 				2DDCCD36286E88180066E677 /* ViewController.swift */,
+				2DC77BA628A1A72A00B835CC /* BridgingTest.h */,
+				2DC77BA728A1A72A00B835CC /* BridgingTest.m */,
 				2DDCCD38286E88180066E677 /* Main.storyboard */,
 				2DDCCD3B286E881C0066E677 /* Assets.xcassets */,
 				2DDCCD3D286E881C0066E677 /* LaunchScreen.storyboard */,
 				2DDCCD40286E881C0066E677 /* Info.plist */,
+				2DC77BA528A1A72A00B835CC /* QWarySurvey-Bridging-Header.h */,
 			);
 			path = QWarySurvey;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 				TargetAttributes = {
 					2DDCCD2E286E88180066E677 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -205,6 +213,7 @@
 				2DDCCD35286E88180066E677 /* SceneDelegate.swift in Sources */,
 				2DF0EBD8289A9C4C00E223B5 /* NotificationsManager.swift in Sources */,
 				2D2981EA2875DCCF0013AB03 /* QWSurvey.swift in Sources */,
+				2DC77BA828A1A72A00B835CC /* BridgingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -367,6 +377,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.qwary.QWarySurvey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QWarySurvey/QWarySurvey-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -395,6 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.qwary.QWarySurvey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QWarySurvey/QWarySurvey-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

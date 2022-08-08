@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct QWSurveyRequest {
+@objc public class QWSurveyRequest: NSObject {
     
     // MARK: Properties
     var scheme: String!
@@ -26,10 +26,11 @@ public struct QWSurveyRequest {
     }
 
     // MARK: Initialize
-    public init(scheme: String?, host: String!, path: String?, params: [String:String]?) {
-        self.scheme = (scheme == nil) ? "https" : scheme
+    @objc public convenience init(scheme: String, host: String, path: String, params: [String:String]) {
+        self.init()
+        self.scheme = scheme
         self.host = host
-        self.path = (path == nil) ? "" : path
-        self.params = (params == nil) ? [String:String]() : params
+        self.path = path
+        self.params = params
     }
 }

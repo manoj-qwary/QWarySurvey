@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class QWSurvey: QWSurveyDelegate {
+@objc public class QWSurvey: NSObject, QWSurveyDelegate {
 
     // MARK: Properties
     private var request: QWSurveyRequest!
@@ -18,7 +18,8 @@ public class QWSurvey: QWSurveyDelegate {
     private var startDateKey = "startDate_"
 
     // MARK: Initialization
-    public init(request: QWSurveyRequest, delegate: QWSurveyDelegate?, configurations: QWScheduleConfigurations) {
+    @objc public convenience init(request: QWSurveyRequest, delegate: QWSurveyDelegate?, configurations: QWScheduleConfigurations) {
+        self.init()
         self.request = request
         self.surveyDelegate = delegate
         self.configurations = configurations
@@ -29,7 +30,7 @@ public class QWSurvey: QWSurveyDelegate {
     }
 
     // MARK: Public methods
-    public func scheduleSurvey(parent: UIViewController) {
+    @objc public func scheduleSurvey(parent: UIViewController) {
         var promptDate: Date!
         if let nextPromptDateTime = UserDefaults.standard.value(forKey: startDateKey) as? Date {
             promptDate = nextPromptDateTime
@@ -68,7 +69,7 @@ public class QWSurvey: QWSurveyDelegate {
         }
     }
 
-    public func clearSchedule() {
+    @objc public func clearSchedule() {
         UserDefaults.standard.removeObject(forKey: isAlreadyTakenKey)
         UserDefaults.standard.removeObject(forKey: startDateKey)
     }

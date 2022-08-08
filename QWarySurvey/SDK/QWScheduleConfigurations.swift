@@ -7,10 +7,10 @@
 
 import Foundation
 
-public struct QWScheduleConfigurations {
+@objc public class QWScheduleConfigurations: NSObject {
     
     // MARK: Properties
-    public static var `default`: QWScheduleConfigurations {
+    @objc public static var testConfigs: QWScheduleConfigurations {
         let startDate = Date().addingTimeInterval(15)   //  mark survey start date
         let repeatInterval = TimeInterval(20)     // repeat survey after seconds
         return QWScheduleConfigurations(startDate: startDate, repeatSurvey: true, repeatInterval: repeatInterval)
@@ -20,9 +20,10 @@ public struct QWScheduleConfigurations {
     var repeatSurvey: Bool!
 
     // MARK: Initialize
-    public init(startDate: Date,                    //  date with format dd/MM/yyyy HH:mm:ss
+    @objc public convenience init(startDate: Date,                    //  date with format dd/MM/yyyy HH:mm:ss
                 repeatSurvey: Bool,                 //  should repeat survey
                 repeatInterval: TimeInterval) {     //  time interval in seconds
+        self.init()
         self.startDate = startDate
         self.repeatInterval = repeatInterval
         self.repeatSurvey = repeatSurvey

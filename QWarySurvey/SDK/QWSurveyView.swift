@@ -8,7 +8,7 @@
 import Foundation
 import WebKit
 
-public class QWSurveyView: UIView, WKScriptMessageHandler, WKNavigationDelegate {
+@objc public class QWSurveyView: UIView, WKScriptMessageHandler, WKNavigationDelegate {
 
     // MARK: Properties
     private var qwWebView: WKWebView = WKWebView()
@@ -17,7 +17,7 @@ public class QWSurveyView: UIView, WKScriptMessageHandler, WKNavigationDelegate 
     private var surveyDelegate: QWSurveyDelegate? = nil
     
     // MARK: Initialization
-    override init(frame: CGRect) {
+    @objc override init(frame: CGRect) {
         super.init(frame: frame)
         addFeedbackView()
     }
@@ -80,7 +80,7 @@ public class QWSurveyView: UIView, WKScriptMessageHandler, WKNavigationDelegate 
     }
     
     // MARK: Public method
-    public func loadSurvey(request: QWSurveyRequest, delegate: QWSurveyDelegate?) {
+    @objc public func loadSurvey(request: QWSurveyRequest, delegate: QWSurveyDelegate?) {
         guard let url = request.url else {
             print("Error: Request URL can not be nil")
             return
