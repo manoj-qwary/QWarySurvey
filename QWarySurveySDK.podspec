@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.swift_version    = '5.0'
   s.name             = 'QWarySurveySDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'QWarySurvey iOS SDK enables you to collect feedback from your mobile app. Embed the surveys in your iOS application seamlessly with few lines of code.'
 
   s.description      = <<-DESC
