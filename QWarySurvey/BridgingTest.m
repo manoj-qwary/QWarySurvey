@@ -31,6 +31,11 @@
     
     //  Test 6
     [[NotificationsManager shared] scheduleNotificationWithRequest:request configs:QWScheduleConfigurations.testConfigs nextPromptDate:[NSDate date]];
+
+    //  Test 7
+    UIViewController * root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root presentViewController:controller animated:TRUE completion:nil];
+
 }
 
 @end
