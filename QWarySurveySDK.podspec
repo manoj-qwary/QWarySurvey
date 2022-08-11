@@ -15,5 +15,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
   s.source_files = 'QWarySurvey/SDK/**/*.{swift}'
-
+  s.exclude_files = [
+    'QWarySurvey/SDK/RctToObjCBridging/**/*.{swift}'
+  ]
 end
