@@ -16,15 +16,13 @@ RCT_EXPORT_MODULE(Survey);
 
 RCT_EXPORT_METHOD(runSurvey:(NSString *)message callback:(RCTResponseSenderBlock)cb)
 {
-  RCTLogInfo(@"runSurvey method called in iOS with message: %@", message);
-  
-  QWSurveyRequest * request = [[QWSurveyRequest alloc] initWithScheme:@"https" host:@"survey.qwary.com" path:@"/form/3Y6A066rNaDrV17TDvQBN6VHVe0P5jrXTClr9qVwer0=" params:@{@"email" : @"jondoe@acmeinc.com", @"planId" : @"trial1"}];
-
-  QWSurveyViewController * controller = [[QWSurveyViewController alloc] initWithRequest:request delegate:self];
-
-  UIViewController * root = [UIApplication sharedApplication].keyWindow.rootViewController;
-  [root presentViewController:controller animated:TRUE completion:nil];
-
+    RCTLogInfo(@"runSurvey method called in iOS with message: %@", message);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        QWSurveyRequest * request = [[QWSurveyRequest alloc] initWithScheme:@"https" host:@"survey.qwary.com" path:@"/form/3Y6A066rNaDrV17TDvQBN6VHVe0P5jrXTClr9qVwer0=" params:@{@"email" : @"jondoe@acmeinc.com", @"planId" : @"trial1"}];
+        QWSurveyViewController * controller = [[QWSurveyViewController alloc] initWithRequest:request delegate:self];
+        UIViewController * root = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [root presentViewController:controller animated:TRUE completion:nil];
+    });
 }
 
 @end
