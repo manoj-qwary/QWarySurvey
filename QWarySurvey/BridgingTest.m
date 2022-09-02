@@ -12,6 +12,9 @@
 
 -(void)testBridgingFromSwiftToObjectiveC {
     
+    //  Test 0
+    QWSurveyRequest * requestFromString = [[QWSurveyRequest alloc] initWithJsonString:@""];
+    
     //  Test 1
     QWSurveyRequest * request = [[QWSurveyRequest alloc] initWithScheme:@"https" host:@"host" path:@"asd" params:@{@"key" : @"value"}];
     

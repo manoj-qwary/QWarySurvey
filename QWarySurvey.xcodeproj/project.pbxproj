@@ -26,6 +26,7 @@
 		2DDCCD52286E8B440066E677 /* QWSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD51286E8B440066E677 /* QWSurveyView.swift */; };
 		2DDCCD56286E8C0C0066E677 /* QWSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */; };
 		2DDCCD58286E8D660066E677 /* QWSurveyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */; };
+		2DF0CCA128C1620300DF9C4E /* QWUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF0CCA028C1620300DF9C4E /* QWUtility.swift */; };
 		2DF0EBD8289A9C4C00E223B5 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF0EBD7289A9C4C00E223B5 /* NotificationsManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		2DDCCD51286E8B440066E677 /* QWSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyView.swift; sourceTree = "<group>"; };
 		2DDCCD55286E8C0C0066E677 /* QWSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyViewController.swift; sourceTree = "<group>"; };
 		2DDCCD57286E8D660066E677 /* QWSurveyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWSurveyRequest.swift; sourceTree = "<group>"; };
+		2DF0CCA028C1620300DF9C4E /* QWUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWUtility.swift; sourceTree = "<group>"; };
 		2DF0EBD7289A9C4C00E223B5 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				2D142E46287F013A008757A1 /* QWScheduleConfigurations.swift */,
 				2D2981E92875DCCE0013AB03 /* QWSurvey.swift */,
 				2DF0EBD7289A9C4C00E223B5 /* NotificationsManager.swift */,
+				2DF0CCA028C1620300DF9C4E /* QWUtility.swift */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				2DCB8E8A28A565E4004BD0B4 /* RCTQwarySurveyModule.m in Sources */,
 				2DDCCD52286E8B440066E677 /* QWSurveyView.swift in Sources */,
 				2DDCCD37286E88180066E677 /* ViewController.swift in Sources */,
+				2DF0CCA128C1620300DF9C4E /* QWUtility.swift in Sources */,
 				2D142E47287F013A008757A1 /* QWScheduleConfigurations.swift in Sources */,
 				2DDCCD56286E8C0C0066E677 /* QWSurveyViewController.swift in Sources */,
 				2DDCCD33286E88180066E677 /* AppDelegate.swift in Sources */,
